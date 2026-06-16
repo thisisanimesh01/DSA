@@ -2,8 +2,7 @@
 Daily Data Structures and Algorithms practice in C++.
 
 ## About
-This repository contains my solutions to DSA problems from various coding platforms. The goal is to strengthen problem-solving skills, master algorithms, and stay consistent with daily practice.
-
+This repository contains my daily practice of solving DSA problems in C++. It serves as a personal record of my progress and learning in the field of data structures and algorithms.
 ## Goal
 - Solve DSA problems consistently.
 - Improve problem-solving skills.
