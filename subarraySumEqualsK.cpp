@@ -8,25 +8,27 @@
 
 using namespace std;
 
-int subarraySum(int arr[], int n, int k) {
-    int count = 0;
-    int sum = 0;
-    unordered_map<int, int> hashmap;
+int subarraySum(vector<int>& nums, int k) {
+        int count = 0;
+        int sum = 0;
+        unordered_map<int, int> hashmap;
 
-    hashmap[0] = 1;
+        hashmap[0] = 1;
 
-    for (int i = 0; i < n; i++) {
-        sum += arr[i];
+        for (int i = 0; i < nums.size(); i++) {
+            sum += nums[i];
 
-        if (hashmap.find(sum - k) != hashmap.end()) {
-            count += hashmap[sum - k];
+            if (hashmap.find(sum - k) != hashmap.end()) {
+                count += hashmap[sum - k];
+            }
+
+
+            hashmap[sum]++;
         }
 
-        hashmap[sum]++;
-    }
-
-    return count;
+        return count;
 }
+
 
 int main() {
     int arr[] = {1, 2, 3, 4, 5};
