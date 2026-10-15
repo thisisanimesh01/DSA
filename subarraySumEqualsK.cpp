@@ -4,6 +4,7 @@
 
 
 #include <iostream>
+#include <vector>
 #include <unordered_map>
 
 using namespace std;
@@ -29,13 +30,11 @@ int subarraySum(vector<int>& nums, int k) {
         return count;
 }
 
-
 int main() {
-    int arr[] = {1, 2, 3, 4, 5};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    vector<int> arr = {1, 2, 3, 4, 5};
     int k = 5;
 
-    cout << "Number of subarrays with sum " << k << " : " << subarraySum(arr, n, k) << endl;
+    cout << "Number of subarrays with sum " << k << " is " << subarraySum(arr, k) << endl;
 
     return 0;
 }
